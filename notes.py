@@ -6,16 +6,20 @@
 
 # str
 y = "I love Computer Science!"
+print(y)
+
+x: str = "yippee"
+print(x)
 
 # numbers
 mynum = 47
 anothernum = 47.7
-print(type(mynum))
+print(type(mynum)) 
 print(type(anothernum))
 
 # bools - True, False
 flag = True
-print(flag)
+print(type(flag)) 
 
 # lists - can hold a list of items of any type
 lane_tech = ["chicago", "high school", 1908, 60618, "addison/western"]
@@ -70,8 +74,9 @@ for el in lst:
 
 # For Loop Template 2
 # do something n times
+print(list(range(5)))
 for i in range(5):
-    print("Intro to AI")
+    print("Intro to AI")                                                                                  
 
 # For Loop Template 3
 # do something for each item in a list but we care about the index
@@ -83,19 +88,21 @@ print(lst)
 
 # Dictionaries
 
-dict = {"name": "rob", "age": 30}
-print(dict["age"])
+dict = {"name": "rob", "age": 40}
+print(dict)
+print(dict["name"])
 
 # Random
 import random
 
-food = ['pizza', 'carrots', 'eggs']
+food = ['pizza', 'carrots', 'eggs', 'yoghurt', 'chicken']
 dinner = random.choice(food)
 print(dinner)
 
-# f String
+# # f String
 age = 25
 # print("Mary is " + age + " years old")
 print(f"Mary is {age} years old")
+print(f"that chicken is {age} years old!!!")
 
 
