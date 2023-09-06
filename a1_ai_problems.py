@@ -20,20 +20,23 @@
 # 1. Palindrome Checker:**
 # Write a program that checks if a given string is a palindrome (reads the same forwards and backwards).
 
-pali = "dessert"
+pali = "racecar"
 drone = ''.join(list(reversed(pali)))
 
 if pali == drone:
-    print("They natch!")
-else
+    print("They match!")
+else:
     print("Try again!")
 
 
 # **19. Basic Password Generator:**
 # Write a program that generates a random password with a specified length.
-# import random 
-# passLength = input("How long do you want your password to be?")
-# password = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', '1', '2', '3', '4', '5', '6', '7', '8']
-# rand = random.choice(password)
-# print(rand)
+import random 
+pass_length = input("How long do you want your password to be? ")
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', '1', '2', '3', '4', '5', '6', '7', '8']
+random.shuffle(letters)
+
+
+
+
 
