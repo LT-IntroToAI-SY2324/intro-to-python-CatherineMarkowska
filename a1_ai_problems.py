@@ -71,13 +71,16 @@ print("It is " + str(celsius) + " degrees today.")
 
 # **16. Vowel and Consonant Counter:**
 # Write a program that counts the number of vowels and consonants in a given string.
-# vowel = ['a', 'e', 'i', 'o', 'u', 'y']
-# consonant = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z']
+vowel = ['a', 'e', 'i', 'o', 'u', 'y']
+consonant = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z']
 
-# word = "hello"
+word = "hello"
 
-# vow = set(vowel).intersection(word)
-# con = set(consonant).intersection(word)
+vow = set(vowel).intersection(word)
+con = set(consonant).intersection(word)
 
-# print(vow)
-# print(con)
+print(vow)
+print(con)
+
+# **10. Calculator:**
+# Create a basic calculator that can perform addition, subtraction, multiplication, and division operations.
