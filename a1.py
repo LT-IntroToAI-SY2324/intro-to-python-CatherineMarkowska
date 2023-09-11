@@ -39,11 +39,13 @@ def factorial(n: int) -> int:
         factorial of the passed in number
     """
     
-    raise NotImplementedError("factorial")
-
+# 4! = 4 * 3 * 2 * 1 or 1 * 2 * 3 * 4
+    result = 1 
+    for x in range(1, n+1):
+        result *= x
+    return result 
 
 T = TypeVar("T")
-
 
 def every_other(lst: List[T]) -> List[T]:
     """Takes a list and returns a list of every other element in the list, starting with

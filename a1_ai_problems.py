@@ -60,13 +60,13 @@
 
 # **6. Temperature Converter:**
 # Create a program that converts temperatures between Fahrenheit and Celsius.
-temp_c = int(input("How many degrees is it in Celsius? "))
-fahrenheit = (temp_c * 9/5) + 32
-print("It is " + str(fahrenheit) + " degrees today.")
+# temp_c = int(input("How many degrees is it in Celsius? "))
+# fahrenheit = (temp_c * 9/5) + 32
+# print("It is " + str(fahrenheit) + " degrees today.")
 
-temp_f = int(input("How many degrees is it in Fahrenheit? "))
-celsius = (temp_f - 32) * (5/9)
-print("It is " + str(celsius) + " degrees today.")
+# temp_f = int(input("How many degrees is it in Fahrenheit? "))
+# celsius = (temp_f - 32) * (5/9)
+# print("It is " + str(celsius) + " degrees today.")
 
 
 # **16. Vowel and Consonant Counter:**
@@ -82,5 +82,8 @@ con = set(consonant).intersection(word)
 print(vow)
 print(con)
 
-# **10. Calculator:**
-# Create a basic calculator that can perform addition, subtraction, multiplication, and division operations.
+vowel_count = 0
+
+
+
+
