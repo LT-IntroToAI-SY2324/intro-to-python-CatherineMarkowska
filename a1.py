@@ -25,7 +25,10 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-   
+    if n<0:
+        return -1*n
+    else:
+        return n
 
 
 def factorial(n: int) -> int:
@@ -58,6 +61,7 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    return lst[::2]
     raise NotImplementedError("every_other")
 
 
@@ -71,7 +75,10 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    s = 0
+    for el in lst:
+        s = s + el
+    return el
 
 
 def mean(lst: List[int]) -> float:
@@ -84,7 +91,7 @@ def mean(lst: List[int]) -> float:
         the mean of the passed in list
     """
     raise NotImplementedError("mean")
-
+    return sum_list(lst)/len(lst) if lst else 0
 
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
@@ -98,7 +105,12 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+
+    if len(lst) % 2 ==1:
+        return lst[len(lst) //2]
+    else:
+        el1 = lst[len(lst)//2]
+        el12 = lst[len(lst)//2 - 1]
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -120,7 +132,23 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
+
+    i = 0
+    current = "duck1"
+    while len(lst) > 2:
+        if current == "duck1":
+            current = "duck2"
+            i += 1
+        elif current == "duck 2":
+            current = "goose"
+            i += 1
+        else:    #current = "goose"
+            current = "duck1"
+            lst.pop(i)
+
+        # wrap back around 
+        i %= len(lst)
+    return(lst)
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
@@ -137,6 +165,11 @@ if __name__ == "__main__":
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
 
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
+    # 1st pass - [roscoe, kim, solin, law, remess]
+    # 2nd pass - [roscoe, kim, solin, law]
+    # 3rd pass - [roscoe, kim, law]
+    # 4th pass - [roscoe, law]
+    print(duck_duck_goose(names))
     assert duck_duck_goose(names) == ["roscoe", "law"]
 
     print("All tests passed!")

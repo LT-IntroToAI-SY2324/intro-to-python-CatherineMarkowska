@@ -18,7 +18,7 @@
 # assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 
 # 1. Palindrome Checker:**
-# Write a program that checks if a given string is a palindrome (reads the same forwards and backwards).
+#Write a program that checks if a given string is a palindrome (reads the same forwards and backwards).
 
 pali = input("Enter a word! ")
 drone = ''.join(list(reversed(pali))) ## reverses the string 
@@ -58,7 +58,7 @@ while not correct_guess:
         print("Wrong, try again!")
 
 # **6. Temperature Converter:**
-# Create a program that converts temperatures between Fahrenheit and Celsius.
+#Create a program that converts temperatures between Fahrenheit and Celsius.
 temp_c = int(input("How many degrees is it in Celsius? "))
 fahrenheit = (temp_c * 9/5) + 32
 print("It is " + str(fahrenheit) + " degrees today.")
@@ -69,7 +69,7 @@ print("It is " + str(celsius) + " degrees today.")
 
 
 # **16. Vowel and Consonant Counter:**
-# Write a program that counts the number of vowels and consonants in a given string.
+#Write a program that counts the number of vowels and consonants in a given string.
 vowel = ['a', 'e', 'i', 'o', 'u', 'y']
 consonant = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z']
 
@@ -93,14 +93,20 @@ print(f"The word has {vowel_count} vowels and {consonant_count} consonants")
 #Create a text-based Hangman game where a player tries to guess a hidden word letter by letter.
 import random
 h_words = ["hello", "blue", "ribbon", "cricket"]
-
-h_words = h_words[0]
-correct = False
-
+h_words = random.choice(h_words)
 print(h_words)
-ask = input("Guess the first letter: ")
 
-##### I accidentally created a never-ending loop doing this. Ctrl C stops it. 
+looper = False ## this boolean helps the game restart each time 
+
+while not looper: 
+    ask = input("Guess the first letter: ")
+
+    if ask == h_words:
+        looper = True
+        print("Keep going!")
+    else:
+        print("Incorrect")
+
 
 
 
