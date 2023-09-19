@@ -14,10 +14,16 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
+My initial thoughts about the Python programming language are that it is very user-intuitive, and much easier to use than Java. I feel that Python follows a similar fotmat to other languages but in a more concise manner. I really like Python! Even though I lost a few workdays as a result of my strep throat, I think it has gone fairly well overall. I feel like I needed a lot of help, though. 
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
+Some similarities between Python and Java are that they both allow for arithematic equations (you can add, subtract, divide, and multiply), the ability to ask for user input, the ability to assign a number/string/number with decimals to a variable, the ability to create loops, and the abilityt to create lists. It seems like you can do anything you can in Java, in Python as well. This was true in the code I did for Scratch, though that was more simplistic. The similarities between Python and HTML is that special indentation is needed. 
+
+Some differences are that printing a String only requires the user to type print("whatever you want") instead of System.out.println("whatever you want"); . Python doesn't seem to require any special characters to end statements and, in addition, you don't need to declare a variable. Python and HTML are leagues apart -- not only are there no semicolons in Python, there are also no angle brackets present. Scratch used different names for things such as loops than Python. 
 
 
 3. What are some things that you learned through this assignment?
+
+Some things I learned through this assignment are asserts, how to reverse a string, how to randomly shuffle items in a list, how to make a dictionary, and how to make an f string. I also learned how to effectively ask ChatGPT for help, rather than have it give me the answers. 
